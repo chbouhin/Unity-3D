@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BasicTarget : ATarget
+public class BasicHealthManager : AHealthManager
 {
     public float _health = 50f;
     
