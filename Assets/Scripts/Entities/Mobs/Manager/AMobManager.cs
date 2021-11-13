@@ -61,12 +61,13 @@ public abstract class AMobManager : MonoBehaviour
             AnimMoving(false);
         }
         if (_cooldownTimer >= _cooldown) {
-            //Infliger les dommages ici
-            AnimAttacking();
-            _cooldownTimer -= _cooldown;
-        } else {
+            if (_animator.GetCurrentAnimatorStateInfo(0).IsName(GetIdleAttackName())) {
+                //Infliger les dommages ici
+                AnimAttacking();
+                _cooldownTimer -= _cooldown;
+            }
+        } else
             _cooldownTimer += Time.deltaTime;
-        }
     }
 
     private void IsWaiting()
@@ -85,4 +86,6 @@ public abstract class AMobManager : MonoBehaviour
     protected abstract void AnimAttacking();
 
     protected abstract void AnimMoving(bool move);
+
+    protected abstract string GetIdleAttackName();
 }

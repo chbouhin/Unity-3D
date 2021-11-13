@@ -34,10 +34,12 @@ public abstract class AMobHealth : MonoBehaviour
 
     private void Die()
     {
-        AnimDying();
-        _AMobManager._AIPath.canMove = false;
-        _AMobManager.enabled = false;
-        Destroy(gameObject, 5f);
+        if (_AMobManager.enabled) {
+            AnimDying();
+            _AMobManager._AIPath.canMove = false;
+            _AMobManager.enabled = false;
+            Destroy(gameObject, 5f);
+        }
     }
 
     protected abstract void AnimTakingDamage();
