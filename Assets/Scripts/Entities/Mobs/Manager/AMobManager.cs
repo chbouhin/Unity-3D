@@ -5,15 +5,15 @@ using Pathfinding;
 
 public abstract class AMobManager : MonoBehaviour
 {
-    [SerializeField] protected AIPath _AIPath;
     [SerializeField] private AIDestinationSetter _AIDestinationSetter;
+    [SerializeField] public AIPath _AIPath;
     [SerializeField] protected Animator _animator;
-    private GameObject _target;
     [SerializeField] protected float _cooldown = 3f;
-    protected float _cooldownTimer;
     [SerializeField] protected float _rangeDetect = 5f;
     [SerializeField] protected float _rangeAttack = 2f;
     [SerializeField] protected int _damage = 10;
+    private GameObject _target;
+    protected float _cooldownTimer;
 
     protected void Start()
     {

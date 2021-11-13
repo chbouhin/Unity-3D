@@ -2790,7 +2790,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 100
+  _animator: {fileID: 1346363619248049006}
   _healthBar: {fileID: 4013660129474118527}
+  _AMobManager: {fileID: 4163402587801628654}
   _basicMobManager: {fileID: 4163402587801628654}
 --- !u!114 &4163402587801628654
 MonoBehaviour:
@@ -2804,8 +2806,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edc6cfbb7cb5bef4cb86be2c7f38b74f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _AIPath: {fileID: 8308620680657045405}
   _AIDestinationSetter: {fileID: 1798332092428321994}
+  _AIPath: {fileID: 8308620680657045405}
   _animator: {fileID: 1346363619248049006}
   _cooldown: 3
   _rangeDetect: 5
