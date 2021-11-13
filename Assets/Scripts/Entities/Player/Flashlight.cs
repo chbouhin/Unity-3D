@@ -5,9 +5,9 @@ using UnityEngine;
 public class Flashlight : MonoBehaviour
 {
     //public GameObject _light;
-    public float _batteryCapacity = 5f;
-    public float _batteryReloadFactor = 4f;
-    [Range(0, 1)] public float _minIntensity = 0.4f;
+    [SerializeField] private float _batteryCapacity = 5f;
+    [SerializeField] private float _batteryReloadFactor = 4f;
+    [Range(0, 1)] [SerializeField] private float _minIntensity = 0.4f;
     private float _batteryTimer;
     private Flashlight_PRO _flashlightProManager;
     private bool _isActive = false;

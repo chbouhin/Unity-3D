@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float _speed = 12f;
-    public float _gravity = -9.81f;
-    public float _jumpHeight = 3f;
-    public CharacterController _controller;
-    public Transform _groundCheck;
-    public float _groundDistance = 0.4f;
-    public LayerMask _groundMask;
-
+    [SerializeField] private float _speed = 12f;
+    [SerializeField] private float _gravity = -9.81f;
+    [SerializeField] private float _jumpHeight = 3f;
+    [SerializeField] private CharacterController _controller;
+    [SerializeField] private Transform _groundCheck;
+    [SerializeField] private float _groundDistance = 0.4f;
+    [SerializeField] private LayerMask _groundMask;
     private Vector3 _velocity;
     private bool _isGrounded = false;
 

@@ -5,21 +5,21 @@ using UnityEngine.UI;
 
 public class BasicUIHealthManager : AHealthManager
 {
-    [SerializeField] private float _life = 100;
+    [SerializeField] private float _health = 100f;
     [SerializeField] protected Slider _healthBar;
 
     private void Start()
     {
-        _healthBar.maxValue = _life;
-        _healthBar.value = _life;
+        _healthBar.maxValue = _health;
+        _healthBar.value = _health;
     }
 
     public override void TakeDamage(float amount)
     {
-        _life -= amount;
-        if (_life <= 0)
+        _health -= amount;
+        if (_health <= 0)
             Die();
-        _healthBar.value = _life;
+        _healthBar.value = _health;
     }
 
     protected override void Die()
