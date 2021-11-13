@@ -2,18 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BasicMobManager : AMobManager
+public class RageMobManager : AMobManager
 {
     private bool _isRunning;
 
     protected override void AnimIdleWait()
     {
-        _animator.SetInteger("IsIdling", 2);
+        _animator.SetInteger("IsIdling", 1);
     }
 
     protected override void AnimIdleAttack()
     {
-        _animator.SetInteger("IsIdling", 1);
+        _animator.SetInteger("IsIdling", 2);
     }
 
     protected override void AnimAttacking()
@@ -37,9 +37,10 @@ public class BasicMobManager : AMobManager
         return "Idle2";
     }
 
-    public void StartRunning()
+    public void IsRaging()
     {
         _isRunning = true;
-        _AIPath.maxSpeed = 2f;
+        _AIPath.maxSpeed = 2.5f;
+        _damage *= 2;
     }
 }

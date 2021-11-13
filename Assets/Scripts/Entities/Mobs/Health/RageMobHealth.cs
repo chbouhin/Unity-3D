@@ -5,15 +5,15 @@ using UnityEngine.UI;
 
 public class RageMobHealth : AMobHealth
 {
-    [SerializeField] private WalkerMobManager _basicMobManager;
-    private bool _isRunning = false;
+    [SerializeField] private RageMobManager _rageMobManager;
+    private bool _isInRage = false;
 
     public override void TakeDamage(float amount)
     {
         base.TakeDamage(amount);
-        if (!_isRunning && _health <= 50) {
-            _basicMobManager.StartRunning();
-            _isRunning = true;
+        if (!_isInRage) {
+            _rageMobManager.IsRaging();
+            _isInRage = true;
         }
     }
 
