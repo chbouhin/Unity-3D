@@ -37,6 +37,14 @@ public class WalkerMobManager : AMobManager
         return "Idle2";
     }
 
+    protected override string GetMoveName()
+    {
+        if (_isRunning)
+            return "Run";
+        else
+            return "Walk";
+    }
+
     public void StartRunning()
     {
         _isRunning = true;

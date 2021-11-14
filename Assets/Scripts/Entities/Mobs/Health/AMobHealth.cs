@@ -9,17 +9,27 @@ public abstract class AMobHealth : MonoBehaviour
     [SerializeField] protected Animator _animator;
     [SerializeField] private Slider _healthBar;
     [SerializeField] private AMobManager _AMobManager;
+    GameObject TEST;//TEMPORAIRE
 
     private void Start()
     {
         _healthBar.maxValue = _health;
         _healthBar.value = _health;
+        TEST = GameObject.Find("Player");//TEMPORAIRE
     }
 
-    private void Update()
+    private void Update()// TEMPORAIRE
     {
         if (Input.GetKeyDown("space"))
             TakeDamage(20);
+        if (Input.GetKey(KeyCode.Q))
+            TEST.transform.Translate(-Vector3.right * Time.deltaTime * 3);
+        if (Input.GetKey(KeyCode.D))
+            TEST.transform.Translate(Vector3.right * Time.deltaTime * 3);
+        if (Input.GetKey(KeyCode.Z))
+            TEST.transform.Translate(Vector3.forward * Time.deltaTime * 3);
+        if (Input.GetKey(KeyCode.S))
+            TEST.transform.Translate(-Vector3.forward * Time.deltaTime * 3);
     }
 
     public virtual void TakeDamage(float amount)

@@ -11,7 +11,7 @@ public class WalkerMobHealth : AMobHealth
     public override void TakeDamage(float amount)
     {
         base.TakeDamage(amount);
-        if (!_isRunning && _health <= 50) {
+        if (!_isRunning && _health <= 30) {
             _basicMobManager.StartRunning();
             _isRunning = true;
         }

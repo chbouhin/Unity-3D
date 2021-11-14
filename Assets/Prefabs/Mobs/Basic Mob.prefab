@@ -2818,6 +2818,6 @@ MonoBehaviour:
   _AIPath: {fileID: 8308620680657045405}
   _animator: {fileID: 1346363619248049006}
   _cooldown: 3
-  _rangeDetect: 5
-  _rangeAttack: 2
+  _rangeDetect: 10
+  _rangeAttack: 2.5
   _damage: 10

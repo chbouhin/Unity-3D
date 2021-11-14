@@ -9,11 +9,11 @@ public abstract class AMobManager : MonoBehaviour
     [SerializeField] public AIPath _AIPath;
     [SerializeField] protected Animator _animator;
     [SerializeField] protected float _cooldown = 3f;
-    [SerializeField] protected float _rangeDetect = 5f;
-    [SerializeField] protected float _rangeAttack = 2f;
+    [SerializeField] protected float _rangeDetect = 10f;
+    [SerializeField] protected float _rangeAttack = 2.5f;
     [SerializeField] protected int _damage = 10;
-    private GameObject _target;
     protected float _cooldownTimer;
+    private GameObject _target;
 
     protected void Start()
     {
@@ -34,7 +34,8 @@ public abstract class AMobManager : MonoBehaviour
         } else {
             IsWaiting();
         }
-        Rotation();
+        if (_cooldownTimer < _cooldown)
+            _cooldownTimer += Time.deltaTime;
     }
 
     private void Rotation()
@@ -42,7 +43,7 @@ public abstract class AMobManager : MonoBehaviour
         Vector3 dir = _target.transform.position - transform.position;
         dir.y = transform.position.y;
         dir.Normalize();
-        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(dir), 5 * Time.deltaTime);
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(dir), 10 * Time.deltaTime);
     }
 
     private void IsMoving()
@@ -51,23 +52,27 @@ public abstract class AMobManager : MonoBehaviour
             AnimMoving(true);
             _AIPath.canMove = true;
         }
+        if (!_animator.GetCurrentAnimatorStateInfo(0).IsName(GetMoveName()))
+            _AIPath.canMove = false;
     }
 
     private void IsAttacking()
     {
+        var animation = _animator.GetCurrentAnimatorStateInfo(0);
+        if (animation.IsName(GetIdleAttackName()))
+            Rotation();
         if (_AIPath.canMove) {
             _AIPath.canMove = false;
             AnimIdleAttack();
             AnimMoving(false);
         }
         if (_cooldownTimer >= _cooldown) {
-            if (_animator.GetCurrentAnimatorStateInfo(0).IsName(GetIdleAttackName())) {
+            if (animation.IsName(GetIdleAttackName()) || animation.IsName(GetMoveName())) {
                 //Infliger les dommages ici
                 AnimAttacking();
                 _cooldownTimer -= _cooldown;
             }
-        } else
-            _cooldownTimer += Time.deltaTime;
+        }
     }
 
     private void IsWaiting()
@@ -88,4 +93,6 @@ public abstract class AMobManager : MonoBehaviour
     protected abstract void AnimMoving(bool move);
 
     protected abstract string GetIdleAttackName();
+
+    protected abstract string GetMoveName();
 }

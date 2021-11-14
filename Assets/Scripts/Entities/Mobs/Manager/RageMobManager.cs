@@ -37,6 +37,14 @@ public class RageMobManager : AMobManager
         return "Idle2";
     }
 
+    protected override string GetMoveName()
+    {
+        if (_isRunning)
+            return "Run";
+        else
+            return "Walk";
+    }
+
     public void IsRaging()
     {
         _isRunning = true;

@@ -19,7 +19,10 @@ public class RageMobHealth : AMobHealth
 
     protected override void AnimTakingDamage()
     {
-        _animator.Play("Damage", -1, 0f);
+        if (_isInRage)
+            _animator.Play("Damage1", -1, 0f);
+        else
+            _animator.Play("Damage2", -1, 0f);
     }
 
     protected override void AnimDying()
