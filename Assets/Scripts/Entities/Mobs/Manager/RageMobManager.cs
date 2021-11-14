@@ -48,7 +48,9 @@ public class RageMobManager : AMobManager
     public void IsRaging()
     {
         _isRunning = true;
-        _AIPath.maxSpeed = 2.5f;
+        _AIPath.maxSpeed *= 2f;
         _damage *= 2;
+        _cooldown /= 2;
+        _animator.SetFloat("SpeedMult", 2f);
     }
 }

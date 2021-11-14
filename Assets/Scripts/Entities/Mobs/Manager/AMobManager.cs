@@ -26,16 +26,18 @@ public abstract class AMobManager : MonoBehaviour
     private void Update()
     {
         float distance = Vector3.Distance(transform.position, _target.transform.position);
+        AnimatorStateInfo animation = _animator.GetCurrentAnimatorStateInfo(0);
         if (distance <= _rangeDetect) {
             if (distance > _rangeAttack)
                 IsMoving();
             else
-                IsAttacking();
+                IsAttacking(animation);
         } else {
             IsWaiting();
         }
         if (_cooldownTimer < _cooldown)
             _cooldownTimer += Time.deltaTime;
+        _AIPath.canMove = animation.IsName(GetMoveName());
     }
 
     private void Rotation()
@@ -48,21 +50,15 @@ public abstract class AMobManager : MonoBehaviour
 
     private void IsMoving()
     {
-        if (!_AIPath.canMove) {
+        if (!_AIPath.canMove)
             AnimMoving(true);
-            _AIPath.canMove = true;
-        }
-        if (!_animator.GetCurrentAnimatorStateInfo(0).IsName(GetMoveName()))
-            _AIPath.canMove = false;
     }
 
-    private void IsAttacking()
+    private void IsAttacking(AnimatorStateInfo animation)
     {
-        var animation = _animator.GetCurrentAnimatorStateInfo(0);
         if (animation.IsName(GetIdleAttackName()))
             Rotation();
         if (_AIPath.canMove) {
-            _AIPath.canMove = false;
             AnimIdleAttack();
             AnimMoving(false);
         }
@@ -80,7 +76,6 @@ public abstract class AMobManager : MonoBehaviour
         if (_AIPath.canMove) {
             AnimIdleWait();
             AnimMoving(false);
-            _AIPath.canMove = false;
         }
     }
 
