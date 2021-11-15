@@ -4,14 +4,13 @@ using UnityEngine;
 
 public abstract class AGun : MonoBehaviour
 {
-    public float _firerate = 15f;
-    public GameObject _muzzleFlash;
-    public float _muzzleFlashDuration = 0.15f;
-    public int _maxAmmo = 10;
-    public float _reloadTime = 1f;
-    public bool _automatic = true;
-    public Animator _animator;
-
+    [SerializeField] protected float _firerate = 15f;
+    [SerializeField] protected GameObject _muzzleFlash;
+    [SerializeField] protected float _muzzleFlashDuration = 0.15f;
+    [SerializeField] protected int _maxAmmo = 10;
+    [SerializeField] protected float _reloadTime = 1f;
+    [SerializeField] protected bool _automatic = true;
+    [SerializeField] protected Animator _animator;
     protected bool _reloading = false;
     protected int _currentAmmo;
     protected float _nextTimeToFire = 0f;

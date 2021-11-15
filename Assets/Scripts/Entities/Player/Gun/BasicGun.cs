@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class BasicGun : AGun
 {
-    public float _damage = 10f;
-    public float _range = 100f;
-    public Camera _playerCam;
-    public GameObject _impactEffect;
+    [SerializeField] private float _damage = 10f;
+    [SerializeField] private float _range = 100f;
+    [SerializeField] private Camera _playerCam;
+    [SerializeField] private GameObject _impactEffect;
 
     protected override void Shoot()
     {
