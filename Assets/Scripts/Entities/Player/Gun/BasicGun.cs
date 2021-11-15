@@ -15,7 +15,6 @@ public class BasicGun : AGun
         RaycastHit hit;
         if (Physics.Raycast(_playerCam.transform.position, _playerCam.transform.forward, out hit, _range))
         {
-            Debug.Log(hit.transform.name);
             AHealthManager target = hit.transform.GetComponent<AHealthManager>();
             if (target)
             {

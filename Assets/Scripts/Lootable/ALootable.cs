@@ -6,9 +6,10 @@ public abstract class ALootable : MonoBehaviour
 {
     public virtual void OnLoot(GameObject looter)
     {
-        if (looter.tag == "Player")
+        if (looter.tag == "Player") {
             looter.GetComponentInChildren<PlayerInventory>().Add(gameObject.name);
-        Destroy(gameObject);
+            Destroy(gameObject);
+        }
     }
 
     protected virtual void OnTriggerEnter(Collider other)

@@ -8,9 +8,9 @@ public class LootableBattery : ALootable
 
     public override void OnLoot(GameObject looter)
     {
-        Debug.Log("Enter OnLoot");
-        if (looter.tag == "Player")
+        if (looter.tag == "Player") {
             looter.GetComponentInChildren<Flashlight>().AddBattery(_batteryCapacity);
-        Destroy(gameObject);
+            Destroy(gameObject);
+        }
     }
 }
