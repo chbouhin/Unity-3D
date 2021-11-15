@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public abstract class AMobHealth : MonoBehaviour
+public abstract class AMobHealth : AHealthManager
 {
     [SerializeField] protected float _health = 100f;
     [SerializeField] protected Animator _animator;
@@ -32,7 +32,7 @@ public abstract class AMobHealth : MonoBehaviour
             TEST.transform.Translate(-Vector3.forward * Time.deltaTime * 3);
     }
 
-    public virtual void TakeDamage(float amount)
+    public override void TakeDamage(float amount)
     {
         _health -= amount;
         if (_health <= 0)
@@ -42,7 +42,7 @@ public abstract class AMobHealth : MonoBehaviour
         _healthBar.value = _health;
     }
 
-    private void Die()
+    protected override void Die()
     {
         if (_AMobManager.enabled) {
             AnimDying();
