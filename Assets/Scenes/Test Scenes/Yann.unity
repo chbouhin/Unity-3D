@@ -568,8 +568,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1ae43c4ad1782144a65eb6a3cb23ca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _theme: 
-  _regroupement: 
+  _theme: InGame
+  _regroupement: TheBalefireSymphony
 --- !u!4 &752452811
 Transform:
   m_ObjectHideFlags: 0
