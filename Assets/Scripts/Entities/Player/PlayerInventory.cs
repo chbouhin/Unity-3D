@@ -26,6 +26,9 @@ public class PlayerInventory : MonoBehaviour
             if (nbInInv < 0) {
                 Debug.Log("Not enough " + name + " in the player inventory");
                 return false;
+            } else if (nbInInv == 0) {
+                _inv.Remove(name);
+                return true;
             } else {
                 _inv[name] = nbInInv;
                 return true;
