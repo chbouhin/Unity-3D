@@ -4,10 +4,12 @@ using UnityEngine;
 
 public abstract class ALootable : MonoBehaviour
 {
+    public string _objectType = "unknown";
+
     public virtual void OnLoot(GameObject looter)
     {
         if (looter.tag == "Player") {
-            looter.GetComponentInChildren<PlayerInventory>().Add(gameObject.name);
+            looter.GetComponentInChildren<PlayerInventory>().Add(_objectType);
             Destroy(gameObject);
         }
     }
