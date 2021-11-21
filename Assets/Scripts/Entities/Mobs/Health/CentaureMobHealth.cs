@@ -27,6 +27,7 @@ public class CentaureMobHealth : AMobHealth
         yield return new WaitForSeconds(secs);
         _health = 200f;
         _healthBar.value = _health;
+        _secondLife = true;
     }
 
     protected override void AnimTakingDamage()
