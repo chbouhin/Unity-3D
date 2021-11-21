@@ -354,7 +354,7 @@ GameObject:
   - component: {fileID: 6588273489554922223}
   - component: {fileID: 329073783012283602}
   - component: {fileID: 3518696879475677624}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Mob Parent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -484,8 +484,8 @@ MonoBehaviour:
   height: 2
   repathRate: 0.5
   canSearch: 1
-  canMove: 0
-  maxSpeed: 1.5
+  canMove: 1
+  maxSpeed: 1
   gravity: {x: NaN, y: NaN, z: NaN}
   groundMask:
     serializedVersion: 2
@@ -495,13 +495,13 @@ MonoBehaviour:
   enableRotation: 1
   targetCompatibility: {fileID: 0}
   maxAcceleration: -2.5
-  rotationSpeed: 1000
+  rotationSpeed: 32400
   slowdownDistance: 0.6
   pickNextWaypointDist: 2
-  endReachedDistance: 2
+  endReachedDistance: 0.2
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1
-  whenCloseToDestination: 1
+  whenCloseToDestination: 0
   constrainInsideGraph: 0
 --- !u!1 &6781521213548748978
 GameObject:
