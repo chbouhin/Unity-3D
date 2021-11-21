@@ -11,6 +11,7 @@ public abstract class AGun : MonoBehaviour
     [SerializeField] protected float _reloadTime = 1f;
     [SerializeField] protected bool _automatic = true;
     [SerializeField] protected Animator _animator;
+    [SerializeField] protected LayerMask _layerToIgnore;
     protected bool _reloading = false;
     protected int _currentAmmo;
     protected float _nextTimeToFire = 0f;

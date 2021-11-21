@@ -35,4 +35,9 @@ public class Flashlight : MonoBehaviour
         } else if (_batteryTimer <= _batteryCapacity)
             _batteryTimer += Time.deltaTime / _batteryReloadFactor;
     }
+
+    public void AddBattery(float percentToAdd)
+    {
+        _batteryTimer = Mathf.Clamp(_batteryTimer + (_batteryCapacity * percentToAdd), 0f, _batteryCapacity);
+    }
 }
