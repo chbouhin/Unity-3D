@@ -12,7 +12,7 @@ public class RageMobHealth : AMobHealth
     {
         base.TakeDamage(amount);
         if (!_isInRage) {
-            _rageMobManager.IsRaging();
+            _rageMobManager.StartRaging();
             _isInRage = true;
         }
     }

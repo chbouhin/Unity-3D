@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RageMobManager : AMobManager
 {
-    private bool _isRunning;
+    private bool _isRunning = false;
 
     protected override void AnimIdleWait()
     {
@@ -45,7 +45,7 @@ public class RageMobManager : AMobManager
             return "Walk";
     }
 
-    public void IsRaging()
+    public void StartRaging()
     {
         _isRunning = true;
         _AIPath.maxSpeed *= 2f;

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WalkerMobManager : AMobManager
 {
-    private bool _isRunning;
+    private bool _isRunning = false;
 
     protected override void AnimIdleWait()
     {
@@ -45,9 +45,9 @@ public class WalkerMobManager : AMobManager
             return "Walk";
     }
 
-    public void StartRunning()
+    public void StartRaging()
     {
         _isRunning = true;
-        _AIPath.maxSpeed = 2f;
+        _AIPath.maxSpeed = 2.5f;
     }
 }

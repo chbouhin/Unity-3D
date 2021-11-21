@@ -6,14 +6,14 @@ using UnityEngine.UI;
 public class WalkerMobHealth : AMobHealth
 {
     [SerializeField] private WalkerMobManager _basicMobManager;
-    private bool _isRunning = false;
+    private bool _isInRage = false;
 
     public override void TakeDamage(float amount)
     {
         base.TakeDamage(amount);
-        if (!_isRunning && _health <= 30) {
-            _basicMobManager.StartRunning();
-            _isRunning = true;
+        if (!_isInRage && _health <= 30) {
+            _basicMobManager.StartRaging();
+            _isInRage = true;
         }
     }
 

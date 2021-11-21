@@ -7,8 +7,8 @@ public abstract class AMobHealth : AHealthManager
 {
     [SerializeField] protected float _health = 100f;
     [SerializeField] protected Animator _animator;
-    [SerializeField] private Slider _healthBar;
-    [SerializeField] private AMobManager _AMobManager;
+    [SerializeField] protected Slider _healthBar;
+    protected bool _isDead = false;
     GameObject TEST;//TEMPORAIRE
 
     private void Start()
@@ -44,11 +44,10 @@ public abstract class AMobHealth : AHealthManager
 
     protected override void Die()
     {
-        if (_AMobManager.enabled) {
+        if (!_isDead) {
             AnimDying();
-            _AMobManager._AIPath.canMove = false;
-            _AMobManager.enabled = false;
             Destroy(gameObject, 5f);
+            _isDead = true;
         }
     }
 
