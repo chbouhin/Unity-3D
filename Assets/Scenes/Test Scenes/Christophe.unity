@@ -179,6 +179,10 @@ PrefabInstance:
       value: Basic Mob
       objectReference: {fileID: 0}
     - target: {fileID: 1439672506974962150, guid: 103d1d3a5a4c0134e86e8ecc52dc5322, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439672506974962150, guid: 103d1d3a5a4c0134e86e8ecc52dc5322, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -299,6 +303,10 @@ PrefabInstance:
       value: Tank Mob
       objectReference: {fileID: 0}
     - target: {fileID: 4084685663960782290, guid: c900b91065cf6814dbcf70d57c652138, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4084685663960782290, guid: c900b91065cf6814dbcf70d57c652138, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -368,7 +376,7 @@ GameObject:
   - component: {fileID: 548664378}
   - component: {fileID: 548664377}
   - component: {fileID: 548664376}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2611,6 +2619,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Centaure Mob
       objectReference: {fileID: 0}
+    - target: {fileID: 1293474121239457726, guid: f707c6f57e2b7a849a3f86448c155126, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7688828462824139315, guid: f707c6f57e2b7a849a3f86448c155126, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -2769,6 +2781,10 @@ PrefabInstance:
       value: Rage Mob
       objectReference: {fileID: 0}
     - target: {fileID: 6841285026373778706, guid: 0d965b159de7dad47a046582667c45ed, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6841285026373778706, guid: 0d965b159de7dad47a046582667c45ed, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -2805,7 +2821,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAAAIIez/dLDPRAIAAO4EAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGFVE1z2jAQ/SuMzm3HEChJb60hpAdCJqSTiy9CWmMNsuTRR4Bk+O9dyQK75NATZt/b3bdv1/4gQtkGmNNmYQRfag7kx4CEZ/Jl0IEPcKBbrdbiHc6cV8FdFUg0cp6pExrjw5BmdQ3OCPZTbWUgZxj0SpTa1HO+hVxbZzFcUmkBIaNdyFYY+hiQQ0o4pt/38Ds44RMD5cD8j+UVk7RugAe1HXl0Zo9amsI5EiP7NgnVtZTCJhnEHZs4Zk4b63EIJHBBcawoYIx/KxDbyqWRL8mrsrTgkihDjzNh0J22KvmlW8tqanetsjcqfehzGzW1JZef0OFoGvHS6Prh0jYLLVwl2O6ZHhm1rmdpPzzrdA+jP3sqd3Qj4bUC9agXRnvFEXTGh1RvYTTrlbqMllfAdh2vFXsV9M3n9Qy79Zzi8IdcinoTjR+3gbXU0e67kAMGV/MbBcejsKkSRoOIPxZe6LZ/PQm4F8Y6hFJDFdRttDeBSubRszCMd7k2CmI4aW5AUemOT1jGXW/wCuu1vULuaXhPUvOEnc//KiWGO36WXUFPen9Zlq30fgm2WnknhYJOdAAe0adcK9UeWN+Tc9ram5KyXtrWC/7vbZEbThn7PoWbDO5Gk9Hm6yTj4xvOpiXA+HY6nZB4e0LhnFQ+tUKTPbg11RVXeGfnz8dgYWgTj50bul+I91r3LBeq1GtmANSqrXARDgab4GvJ51ygQWtwTqi4b/JREKnZDnhxKVTESecHZ2jRVSlII960C5GC5PGjUZATOf0FUEsDBBQAAAgIAAAIIexJeexWbQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM01VFQSi9KLMgoBooYgjilmSkgdrSScUpicrKZeaqxQaqlkalRkq6pQYqJcUqyeVpqqomFubmpUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAAAIIez/dLDPRAIAAO4EAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAAAIIexJeexWbQAAAHgAAAAJACQAAAAAAAAAAAAAAJECAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAASQMAAAAA
+    dataString: UEsDBBQAAAgIAAAAIezJ9uBHQwIAAO0EAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGFVE1z2jAQ/SuMzm3H4aMkvbWGkB4ImZBOLr4IaY01yJJHHwGS4b93JQvskkNPmH1vd9++XfuDCGUbYE6bhRF8qTmQHwMSnsmXQQc+wIFutVqLdzhzXgV3VSDRyHmmTmiM34Q0q2twRrCfaisDOcOgV6LUpp7zLeTaOovhkkoLCBntQrbC0MeAHFLCMf2+h9/BCZ8YKAfmfyyvmKR1Azyo7cjDM3vY0hTOkRjZt0morqUUNskg7tjEMXPaWI9DIIELimNFAWP8W4HYVi6NfElelaUFl0QZepwJg+60Vckv3VpWU7trlb1R6UOf26ipLbn8hE5HES6Nrh8uXbPQwVWC7Z7pkVHreo72w7NO9k20Z0/ljm4kvFagHvXCaK84gs74kOotDGe9UpfJ8grYruO1Wq+Cvvm8nZtuO6c4+yGXot5E38dtYC11dPsu5IDBzfxGwfEmbKqE0SDij4UXuu0fTwLuhbEOodRQBXUb7U2gknn0LAzjXa6NghhOmhtQVLrjE5Zx1wu8wnptr5B7Gl6T1Dxh5+u/Sonhjp9lV9CT3l+WZSu9X4KtVt5JoaATHYBH9CnXSrX31ffknLb2pqSsl7b1gv97WmTEKWPfpzDK4G44GW6+TjI+HnE2LQHGt9PphMTbEwrnpPKpFZrswa2prrjCOzt/PQYLQ5t469zQ/UK817pnuVClXjMDoFZthYtwMNgE30o+5wINWoNzQsV9k4+CSM12wItLoSJOOj84Q4uuSkEa8aZdiBQkj9+MgpzI6S9QSwMEFAAACAgAAAAh7El57FZtAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTVUVBKL0osyCgGihiCOKWZKSB2tJJxSmJyspl5qrFBqqWRqVGSrqlBiolxSrJ5WmqqiYW5ualSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAAAAh7Mn24EdDAgAA7QQAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAAAh7El57FZtAAAAeAAAAAkAJAAAAAAAAAAAAAAAkAIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAABIAwAAAAA=
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 

@@ -1370,6 +1370,10 @@ PrefabInstance:
       propertyPath: radius
       value: 0.05
       objectReference: {fileID: 0}
+    - target: {fileID: 3518696879475677624, guid: 82913d38afd63d94caff91a419376a3e, type: 3}
+      propertyPath: maxSpeed
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4509271247820065272, guid: 82913d38afd63d94caff91a419376a3e, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.001
@@ -1542,5 +1546,4 @@ MonoBehaviour:
   _health: 100
   _animator: {fileID: 6891809717125691290}
   _healthBar: {fileID: 8843095388549463947}
-  _AMobManager: {fileID: 287510275754890800}
   _rageMobManager: {fileID: 287510275754890800}
