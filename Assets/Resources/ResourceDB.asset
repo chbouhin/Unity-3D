@@ -1,0 +1,228 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 115d1603715e3d84ebb85e2f16d8594a, type: 3}
+  m_Name: ResourceDB
+  m_EditorClassIdentifier: 
+  items:
+  - name: JycRow
+    ext: 
+    path: 
+    type: 1
+    objectTypeName: 
+  - name: InGame
+    ext: 
+    path: JycRow
+    type: 1
+    objectTypeName: 
+  - name: 04 Stage 1-2 (Deep in the Forest)
+    ext: mp3
+    path: JycRow/InGame
+    type: 2
+    objectTypeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: 07 Night Queen (instrumental)
+    ext: mp3
+    path: JycRow/InGame
+    type: 2
+    objectTypeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Ebony Bloodrose, the Banished Necrom
+    ext: mp3
+    path: JycRow/InGame
+    type: 2
+    objectTypeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Fluttershy, the Dragon Master
+    ext: mp3
+    path: JycRow/InGame
+    type: 2
+    objectTypeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Healing
+    ext: mp3
+    path: JycRow/InGame
+    type: 2
+    objectTypeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: So it's a goodbye...
+    ext: mp3
+    path: JycRow/InGame
+    type: 2
+    objectTypeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Menu
+    ext: 
+    path: JycRow
+    type: 1
+    objectTypeName: 
+  - name: 04 Sun of the Night (instrumental)
+    ext: mp3
+    path: JycRow/Menu
+    type: 2
+    objectTypeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Legends of the Everfree
+    ext: mp3
+    path: JycRow/Menu
+    type: 2
+    objectTypeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Multiverse War
+    ext: mp3
+    path: JycRow/Menu
+    type: 2
+    objectTypeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: The tall pony who's behind you
+    ext: mp3
+    path: JycRow/Menu
+    type: 2
+    objectTypeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Trixie Lulamoon, the Great Archmage
+    ext: mp3
+    path: JycRow/Menu
+    type: 2
+    objectTypeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: TheBalefireSymphony
+    ext: 
+    path: 
+    type: 1
+    objectTypeName: 
+  - name: InGame
+    ext: 
+    path: TheBalefireSymphony
+    type: 1
+    objectTypeName: 
+  - name: 02 Anathema
+    ext: mp3
+    path: TheBalefireSymphony/InGame
+    type: 2
+    objectTypeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: 03 200 Years Underground
+    ext: mp3
+    path: TheBalefireSymphony/InGame
+    type: 2
+    objectTypeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: 04 Stable 2
+    ext: mp3
+    path: TheBalefireSymphony/InGame
+    type: 2
+    objectTypeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: 06 Velvet's Disappearance
+    ext: mp3
+    path: TheBalefireSymphony/InGame
+    type: 2
+    objectTypeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: 10 Out of the Stable
+    ext: mp3
+    path: TheBalefireSymphony/InGame
+    type: 2
+    objectTypeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: 11 The Equestrian Wasteland
+    ext: mp3
+    path: TheBalefireSymphony/InGame
+    type: 2
+    objectTypeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: 12 Velvet's Letter
+    ext: mp3
+    path: TheBalefireSymphony/InGame
+    type: 2
+    objectTypeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: 13 The Campfire
+    ext: mp3
+    path: TheBalefireSymphony/InGame
+    type: 2
+    objectTypeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: 16 S.A.T.S.
+    ext: mp3
+    path: TheBalefireSymphony/InGame
+    type: 2
+    objectTypeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: 17 Blood and Bones
+    ext: mp3
+    path: TheBalefireSymphony/InGame
+    type: 2
+    objectTypeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: 22 The Library
+    ext: mp3
+    path: TheBalefireSymphony/InGame
+    type: 2
+    objectTypeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: 24 A Quiet Wasteland Day
+    ext: mp3
+    path: TheBalefireSymphony/InGame
+    type: 2
+    objectTypeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: 28 The Highway
+    ext: mp3
+    path: TheBalefireSymphony/InGame
+    type: 2
+    objectTypeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: 42 Exploring Ruins
+    ext: mp3
+    path: TheBalefireSymphony/InGame
+    type: 2
+    objectTypeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: Menu
+    ext: 
+    path: TheBalefireSymphony
+    type: 1
+    objectTypeName: 
+  - name: 09 LittlePip Alone
+    ext: mp3
+    path: TheBalefireSymphony/Menu
+    type: 2
+    objectTypeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: 18 Broken Carousel
+    ext: mp3
+    path: TheBalefireSymphony/Menu
+    type: 2
+    objectTypeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: 22 The Library
+    ext: mp3
+    path: TheBalefireSymphony/Menu
+    type: 2
+    objectTypeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: 26 Old Deadhoof
+    ext: mp3
+    path: TheBalefireSymphony/Menu
+    type: 2
+    objectTypeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - name: When The Bombs Fell
+    ext: mp3
+    path: TheBalefireSymphony/Menu
+    type: 2
+    objectTypeName: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  m_FileCount: 30
+  m_FolderCount: 6
+  UpdateAutomatically: 0
