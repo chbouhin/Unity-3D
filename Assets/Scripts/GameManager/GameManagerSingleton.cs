@@ -26,6 +26,9 @@ public class GameManagerSingleton : MonoBehaviour
     #region Leaderboard-variable
     private string _saveFilePath;
     #endregion
+    #region GameOption-variable
+    private float _volume = 1f;
+    #endregion
 
     private void Awake()
     {
@@ -193,6 +196,13 @@ public class GameManagerSingleton : MonoBehaviour
         for (int i = 0; ret.Count != size && leaderboard.Count < i; ++i)
             ret.Add(leaderboard[i]);
         return ret;
+    }
+    #endregion
+    #region GameOption
+    public void SetVolume(float volume)
+    {
+        _volume = volume;
+        AudioListener.volume = _volume;
     }
     #endregion
 }
