@@ -34,12 +34,14 @@ public abstract class AMobHealth : AHealthManager
 
     public override void TakeDamage(float amount)
     {
-        _health -= amount;
-        if (_health <= 0)
-            Die();
-        else
-            AnimTakingDamage();
-        _healthBar.value = _health;
+        if (_health > 0) {
+            _health -= amount;
+            if (_health <= 0)
+                Die();
+            else
+                AnimTakingDamage();
+            _healthBar.value = _health;
+        }
     }
 
     protected override void Die()

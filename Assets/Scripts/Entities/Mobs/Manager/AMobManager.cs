@@ -5,8 +5,8 @@ using Pathfinding;
 
 public abstract class AMobManager : MonoBehaviour
 {
+    public AIPath _AIPath;
     [SerializeField] private AIDestinationSetter _AIDestinationSetter;
-    [SerializeField] public AIPath _AIPath;
     [SerializeField] protected Animator _animator;
     [SerializeField] protected float _cooldown = 3f;
     [SerializeField] protected float _rangeDetect = 10f;
@@ -48,7 +48,7 @@ public abstract class AMobManager : MonoBehaviour
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(dir), 10 * Time.deltaTime);
     }
 
-    private void IsMoving()
+    protected virtual void IsMoving()
     {
         if (!_AIPath.canMove)
             AnimMoving(true);
@@ -71,7 +71,7 @@ public abstract class AMobManager : MonoBehaviour
         }
     }
 
-    private void IsWaiting()
+    protected virtual void IsWaiting()
     {
         if (_AIPath.canMove) {
             AnimIdleWait();
