@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 4525626179322235041}
   - component: {fileID: 6514379241477442084}
   - component: {fileID: 34855222612452557}
+  - component: {fileID: 6641528374832794913}
+  - component: {fileID: 5462339145325457695}
+  - component: {fileID: 6984689082501166227}
   m_Layer: 5
   m_Name: Objectives1
   m_TagString: Untagged
@@ -78,6 +81,51 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6641528374832794913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154140421725978679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85b1507fec33e69499cb76ae52e0e89b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _text: {fileID: 5718449643164650250}
+  _message: Finish in 3 minutes
+  _end: 1
+--- !u!114 &5462339145325457695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154140421725978679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85b1507fec33e69499cb76ae52e0e89b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _text: {fileID: 8591180306020402864}
+  _message: Kill 5 Mobs
+  _end: 5
+--- !u!114 &6984689082501166227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154140421725978679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85b1507fec33e69499cb76ae52e0e89b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _text: {fileID: 1523198986653587940}
+  _message: Kill 1 Boss
+  _end: 1
 --- !u!1 &984833010766368732
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,7 +283,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Finish in 2 minutes
+  m_Text: Finish in 3 minutes
 --- !u!1 &4285972911429778964
 GameObject:
   m_ObjectHideFlags: 0
@@ -314,4 +362,4 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Kill 1 Boss (0 / 1)
+  m_Text: Kill 1 Boss
