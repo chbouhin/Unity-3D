@@ -8,12 +8,12 @@ public class OptionMenu : MonoBehaviour
 
     private void Awake()
     {
-        // _gameManager = GameObject.Find("GameManager").GetComponent<GameManagerSingleton>();
+        _gameManager = GameObject.Find("GameManager").GetComponent<GameManagerSingleton>();
     }
 
     public void SetVolume(float newVolume)
     {
         Debug.Log("New volume : " + (newVolume * 100));
-        // _gameManager.SetVolume(newVolume);
+        _gameManager.SetVolume(newVolume);
     }
 }

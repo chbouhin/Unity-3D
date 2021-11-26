@@ -14,7 +14,7 @@ public class GameManagerSingleton : MonoBehaviour
     private string _currentTheme = "Menu";
     private AudioClip _currentClip = null;
     private AudioSource _audioPlayer;
-    private bool _isPlayingMusic = false;
+    private bool _isPlayingMusic = true;
     #endregion
     #region InGameTime-variable
     private float _inGameTimer = 0f;
@@ -37,6 +37,7 @@ public class GameManagerSingleton : MonoBehaviour
         else {
             _instance = this;
             DontDestroyOnLoad(gameObject);
+            SetVolume(0.05f);
             LoadAllMusic();
             _audioPlayer = gameObject.GetComponent<AudioSource>();
             _saveFilePath = Application.persistentDataPath + "/leaderboard.save";
