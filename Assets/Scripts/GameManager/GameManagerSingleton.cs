@@ -139,6 +139,11 @@ public class GameManagerSingleton : MonoBehaviour
     {
         _currentScore += toAdd;
     }
+
+    public void ResetScore()
+    {
+        _currentScore = 0;
+    }
     #endregion
     #region Leaderboard
     public List<SavedScoreData> LoadLeaderboard()
