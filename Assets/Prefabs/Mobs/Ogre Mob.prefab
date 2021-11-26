@@ -7519,9 +7519,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73c63ad6fe2c35f46ae2ba32ec65977b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 100
+  _health: 200
   _animator: {fileID: 4742840106197045252}
   _healthBar: {fileID: 7263655262192916501}
+  _ogreMobManager: {fileID: 3030644936642659514}
 --- !u!114 &3030644936642659514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7534,8 +7535,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d77118c7901cce4fbb3fb976cf8971d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _AIDestinationSetter: {fileID: 5443225652456316832}
   _AIPath: {fileID: 2319612306466856183}
+  _AIDestinationSetter: {fileID: 5443225652456316832}
   _animator: {fileID: 4742840106197045252}
   _cooldown: 3
   _rangeDetect: 10

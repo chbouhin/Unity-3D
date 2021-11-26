@@ -22,7 +22,7 @@ public class OgreMobManager : AMobManager
     protected override void AnimMoving(bool move)
     {
         if (move) {
-            if (!_isRunning)
+            if (_isRunning)
                 _animator.SetInteger("IsMoving", 2);
             else
                 _animator.SetInteger("IsMoving", 1);
@@ -37,9 +37,15 @@ public class OgreMobManager : AMobManager
 
     protected override string GetMoveName()
     {
-        if (!_isRunning)
+        if (_isRunning)
             return "Run";
         else
             return "Walk";
+    }
+
+    public void StartRaging()
+    {
+        _isRunning = true;
+        _AIPath.maxSpeed = 2.5f;
     }
 }
