@@ -3128,8 +3128,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b17ed01271b6a24d94f885eab6f50f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _AIDestinationSetter: {fileID: 1944742340293880466}
   _AIPath: {fileID: 8162720606203668933}
+  _AIDestinationSetter: {fileID: 1944742340293880466}
   _animator: {fileID: 1199883623227647286}
   _cooldown: 1.25
   _rangeDetect: 10
@@ -3150,4 +3150,6 @@ MonoBehaviour:
   _health: 200
   _animator: {fileID: 1199883623227647286}
   _healthBar: {fileID: 3871560516962151719}
+  _giveScore: 500
+  _score: {fileID: 0}
   _centaureMobManager: {fileID: 3950356838306850074}

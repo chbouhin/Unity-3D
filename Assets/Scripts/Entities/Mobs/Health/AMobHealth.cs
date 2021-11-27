@@ -8,6 +8,8 @@ public abstract class AMobHealth : AHealthManager
     [SerializeField] protected float _health = 100f;
     [SerializeField] protected Animator _animator;
     [SerializeField] protected Slider _healthBar;
+    [SerializeField] private int _giveScore = 100;
+    private Score _score;
     protected bool _isDead = false;
     GameObject TEST;//TEMPORAIRE
 
@@ -15,6 +17,7 @@ public abstract class AMobHealth : AHealthManager
     {
         _healthBar.maxValue = _health;
         _healthBar.value = _health;
+        _score = GameObject.Find("GameManager").GetComponent<Score>();
         TEST = GameObject.Find("Player");//TEMPORAIRE
     }
 
@@ -50,6 +53,7 @@ public abstract class AMobHealth : AHealthManager
             AnimDying();
             Destroy(gameObject, 5f);
             _isDead = true;
+            _score.AddScore(_giveScore);
         }
     }
 
