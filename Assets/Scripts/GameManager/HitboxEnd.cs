@@ -12,7 +12,7 @@ public class HitboxEnd : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (_obj1 != null && _timer.timer <= 180f)
-            _obj2.FinishObj();
+            _obj1.FinishObj();
         if (_obj2 != null)
             _obj2.FinishObj();
         _sceneUpdate.NextScene();
