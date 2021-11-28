@@ -11,6 +11,8 @@ public class HitboxEnd : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (gameObject.GetComponent<SaveToLeaderboard>() != null)
+            gameObject.GetComponent<SaveToLeaderboard>().Save();
         if (_obj1 != null && _timer.timer <= 180f)
             _obj1.FinishObj();
         if (_obj2 != null)

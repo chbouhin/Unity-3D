@@ -1524,13 +1524,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6c1c08ae76b36746a92f2f48c7979e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _AIDestinationSetter: {fileID: 6196789788217358398}
   _AIPath: {fileID: 4487195483421391721}
+  _AIDestinationSetter: {fileID: 6196789788217358398}
   _animator: {fileID: 6891809717125691290}
   _cooldown: 3
   _rangeDetect: 10
   _rangeAttack: 2.5
   _damage: 10
+  _atkSFX: {fileID: 6234416468981284165, guid: 493f4f8ff879fc54bb38db7a007fb2af, type: 3}
 --- !u!114 &8988244329482780361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1546,4 +1547,7 @@ MonoBehaviour:
   _health: 100
   _animator: {fileID: 6891809717125691290}
   _healthBar: {fileID: 8843095388549463947}
+  _giveScore: 100
+  _isBoss: 0
+  _takeDmgSFX: {fileID: 7732925639985683507, guid: 113d6360b53ced24e811ac8459ebc7b2, type: 3}
   _rageMobManager: {fileID: 287510275754890800}

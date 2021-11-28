@@ -8,6 +8,8 @@ public class BasicGun : AGun
     [SerializeField] private float _range = 100f;
     [SerializeField] private Camera _playerCam;
     [SerializeField] private GameObject _impactEffect;
+    [SerializeField] private GameObject _gunShot;
+
     private LightenUpDetector _lightenUpDetector = null;
 
     protected override void Awake()
@@ -22,6 +24,8 @@ public class BasicGun : AGun
         RaycastHit hit;
         if (Physics.Raycast(_playerCam.transform.position, _playerCam.transform.forward, out hit, _range, ~((int)_layerToIgnore)))
         {
+            GameObject gunShot = Instantiate(_gunShot, this.transform.position, this.transform.rotation);
+
             Debug.Log(hit.transform.gameObject.name);
             if (_lightenUpDetector.IsLightenUp(hit.transform.gameObject)) {
                 Debug.Log("hit");

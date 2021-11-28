@@ -2805,7 +2805,8 @@ MonoBehaviour:
   _animator: {fileID: 1346363619248049006}
   _healthBar: {fileID: 4013660129474118527}
   _giveScore: 100
-  _score: {fileID: 0}
+  _isBoss: 0
+  _takeDmgSFX: {fileID: 7732925639985683507, guid: 113d6360b53ced24e811ac8459ebc7b2, type: 3}
   _walkerMobManager: {fileID: 4163402587801628654}
 --- !u!114 &4163402587801628654
 MonoBehaviour:
@@ -2826,3 +2827,4 @@ MonoBehaviour:
   _rangeDetect: 10
   _rangeAttack: 2.5
   _damage: 10
+  _atkSFX: {fileID: 6234416468981284165, guid: 493f4f8ff879fc54bb38db7a007fb2af, type: 3}

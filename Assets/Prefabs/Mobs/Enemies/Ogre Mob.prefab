@@ -7524,6 +7524,7 @@ MonoBehaviour:
   _healthBar: {fileID: 7263655262192916501}
   _giveScore: 500
   _isBoss: 1
+  _takeDmgSFX: {fileID: 7732925639985683507, guid: 113d6360b53ced24e811ac8459ebc7b2, type: 3}
   _ogreMobManager: {fileID: 3030644936642659514}
 --- !u!114 &3030644936642659514
 MonoBehaviour:
@@ -7544,3 +7545,4 @@ MonoBehaviour:
   _rangeDetect: 10
   _rangeAttack: 2.5
   _damage: 10
+  _atkSFX: {fileID: 6234416468981284165, guid: 493f4f8ff879fc54bb38db7a007fb2af, type: 3}
