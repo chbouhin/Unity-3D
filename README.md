@@ -10,7 +10,7 @@
 | Space | Jump |
 | F | Toggle flashlight |
 | E | Open or Close door |
-| Escape | Open pause menu |
+| Escape | Open or Close pause menu |
 
 
 # BASIC RULE:
