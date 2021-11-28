@@ -12,6 +12,8 @@ public class ZombieMobHealth : AMobHealth
         if (nbLife == 0) {
             base.Die();
         } else {
+            gameObject.GetComponent<CapsuleCollider>().enabled = false;
+            gameObject.GetComponent<Rigidbody>().isKinematic = true;
             _animator.Play("Fall");
             StartCoroutine(NewLife(7.75f));
         }
@@ -20,6 +22,8 @@ public class ZombieMobHealth : AMobHealth
     IEnumerator NewLife(float secs)
     {
         yield return new WaitForSeconds(secs);
+        gameObject.GetComponent<CapsuleCollider>().enabled = true;
+        gameObject.GetComponent<Rigidbody>().isKinematic = false;
         _health = 1f;
         _healthBar.value = _health;
     }
