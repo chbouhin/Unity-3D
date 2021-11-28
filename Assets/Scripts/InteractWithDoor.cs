@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class InteractWithDoor : MonoBehaviour
 {
-    public bool open;
-    // Start is called before the first frame update
-    void Start()
-    {
-        open = false;
-    }
+    public bool open = false;
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         
     }
@@ -22,6 +16,7 @@ public class InteractWithDoor : MonoBehaviour
         if(this.open == false) {
             transform.Rotate(0, 90, 0);
             this.open = true;
+            StartCoroutine(WaitToScan(0.25f));
             return 0;
         }
         return 1;
@@ -32,8 +27,15 @@ public class InteractWithDoor : MonoBehaviour
         if(this.open == true) {
             transform.Rotate(0, -90, 0);
             this.open = false;
+            StartCoroutine(WaitToScan(0.25f));
             return 0;
         }
         return 1;
+    }
+
+    private IEnumerator WaitToScan(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        AstarPath.active.Scan();
     }
 }
