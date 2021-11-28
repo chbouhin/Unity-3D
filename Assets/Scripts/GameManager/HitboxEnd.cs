@@ -9,6 +9,8 @@ public class HitboxEnd : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (gameObject.GetComponent<SaveToLeaderboard>() != null)
+            gameObject.GetComponent<SaveToLeaderboard>().Save();
         if (_obj != null)
             _obj.FinishObj();
         _sceneUpdate.NextScene();

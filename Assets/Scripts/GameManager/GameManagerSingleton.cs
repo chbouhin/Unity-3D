@@ -54,8 +54,10 @@ public class GameManagerSingleton : MonoBehaviour
     #region Music
     public void PlayMusic(string theme = null, string regroupement = null)
     {
-        _currentTheme = (theme == null || theme == "") ? _currentTheme : theme;
-        _currentRegroupement = (regroupement == null || regroupement == "") ? _currentRegroupement : regroupement;
+        if (theme == _currentTheme && regroupement == _currentRegroupement && _audioPlayer.isPlaying)
+            return;
+        _currentTheme = (theme == null || theme == "" || theme == _currentTheme) ? _currentTheme : theme;
+        _currentRegroupement = (regroupement == null || regroupement == "" || regroupement == _currentRegroupement) ? _currentRegroupement : regroupement;
         if (_currentClip != null)
             Resources.UnloadAsset(_currentClip);
         _currentClip = _musicCollection[_currentRegroupement][_currentTheme][Random.Range(0, _musicCollection[_currentRegroupement][_currentTheme].Count)].Load<AudioClip>();
