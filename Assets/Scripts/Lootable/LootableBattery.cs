@@ -9,9 +9,9 @@ public class LootableBattery : ALootable
 
     private void Start()
     {
-        GameObject obj1 = GameObject.Find("Obj1");
-        if (obj1 != null)
-            _obj = obj1.GetComponent<Objective>();
+        GameObject obj21 = GameObject.Find("Obj21");
+        if (obj21 != null)
+            _obj = obj21.GetComponent<Objective>();
     }
 
     public override void OnLoot(GameObject looter)

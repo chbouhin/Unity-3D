@@ -18,7 +18,7 @@ public class Objective : MonoBehaviour
             return;
         _value += value;
         if (_end > 1)
-            _text.text = _message + " (" + _value.ToString() + " / " + _end.ToString() + ")";
+            _text.text = _message + " (" + _value.ToString() + "/" + _end.ToString() + ")";
         if (_value >= _end)
             FinishObj();
     }

@@ -3151,5 +3151,5 @@ MonoBehaviour:
   _animator: {fileID: 1199883623227647286}
   _healthBar: {fileID: 3871560516962151719}
   _giveScore: 500
-  _score: {fileID: 0}
+  _isBoss: 1
   _centaureMobManager: {fileID: 3950356838306850074}
