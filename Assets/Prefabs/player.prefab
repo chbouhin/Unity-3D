@@ -153,7 +153,7 @@ MonoBehaviour:
   _jumpHeight: 3
   _controller: {fileID: 5743570314521107919}
   _groundCheck: {fileID: 5743570313794551517}
-  _groundDistance: 0.4
+  _groundDistance: 0
   _groundMask:
     serializedVersion: 2
     m_Bits: 64
