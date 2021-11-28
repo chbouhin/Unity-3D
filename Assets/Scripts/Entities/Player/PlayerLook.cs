@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class PlayerLook : MonoBehaviour
 {
-    [SerializeField] public float _mouseSensitivity = 200f;
+    [SerializeField] private float _mouseSensitivity = 200f;
     [SerializeField] private Transform _playerBody;
+    [SerializeField] private Camera _playerCam;
+    [SerializeField] private LayerMask _layerToIgnore;
+    [SerializeField] private float _interactRange = 4f;
 
     private float xRotation = 0f;
 
@@ -25,5 +28,22 @@ public class PlayerLook : MonoBehaviour
 
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
         _playerBody.Rotate(Vector3.up * mouse_x);
+        if (Input.GetKeyDown("e")) {
+            TryInteractWithDoor();
+        }
+    }
+
+    private void TryInteractWithDoor()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(_playerCam.transform.position, _playerCam.transform.forward, out hit, _interactRange, ~((int)_layerToIgnore))) {
+            InteractWithDoor doorOpener = hit.transform.GetComponentInParent<InteractWithDoor>();
+            if (doorOpener != null)
+                if (!doorOpener.open) {
+                    doorOpener.OpenDoor();
+                } else {
+                    doorOpener.CloseDoor();
+                }
+        }
     }
 }
