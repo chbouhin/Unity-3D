@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Score : MonoBehaviour
 {
     [SerializeField] private Text _textScore;
-    //private int totalScore = 0;
+    [SerializeField] private Objective _obj;
     private GameManagerSingleton _gameManager = null;
 
     private void Awake()
@@ -21,6 +21,8 @@ public class Score : MonoBehaviour
 
     public void AddScore(int score)
     {
+        if (_obj != null)
+            _obj.UpdateObj(score);
         _gameManager.AddToScore(score);
         _textScore.text = "Score : " + _gameManager.GetCurrentScore().ToString("00000.##");
     }
