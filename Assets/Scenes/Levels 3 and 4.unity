@@ -1105,10 +1105,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameOverButtons
       objectReference: {fileID: 0}
-    - target: {fileID: 2752214808559850544, guid: 1c2630c7ec6074141ad1f721196cd55f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7136946347491559946, guid: 1c2630c7ec6074141ad1f721196cd55f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
