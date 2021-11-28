@@ -7,6 +7,7 @@ public class SceneUpdate : MonoBehaviour
 {
     public void LoadScene(string scene)
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(scene);
     }
 
@@ -25,6 +26,7 @@ public class SceneUpdate : MonoBehaviour
 
     public void ReloadScene()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
