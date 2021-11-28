@@ -64,7 +64,7 @@ public abstract class AMobManager : MonoBehaviour
         }
         if (_cooldownTimer >= _cooldown) {
             if (animation.IsName(GetIdleAttackName()) || animation.IsName(GetMoveName())) {
-                //Infliger les dommages ici
+                _target.GetComponent<AHealthManager>().TakeDamage(_damage);
                 AnimAttacking();
                 _cooldownTimer -= _cooldown;
             }
