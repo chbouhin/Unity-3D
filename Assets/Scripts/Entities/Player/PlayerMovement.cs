@@ -20,6 +20,9 @@ public class PlayerMovement : MonoBehaviour
         _gameManagerSingleton = GameObject.Find("GameManager").GetComponent<GameManagerSingleton>();
         if (_gameManagerSingleton._checkPoint)
             transform.position = _gameManagerSingleton._savePosition;
+        Time.timeScale = 1;
+        // Cursor.visible = false;
+        // Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void Update()

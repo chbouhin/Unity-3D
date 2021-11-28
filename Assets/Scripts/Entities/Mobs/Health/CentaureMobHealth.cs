@@ -14,6 +14,8 @@ public class CentaureMobHealth : AMobHealth
             if (_secondLife)
                 base.Die();
         } else {
+            gameObject.GetComponent<CapsuleCollider>().enabled = false;
+            gameObject.GetComponent<Rigidbody>().isKinematic = true;
             AnimDying();
             _centaureMobManager.StartRaging();
             _isInRage = true;
@@ -24,6 +26,8 @@ public class CentaureMobHealth : AMobHealth
     IEnumerator SecondLife(float secs)
     {
         yield return new WaitForSeconds(secs);
+        gameObject.GetComponent<CapsuleCollider>().enabled = true;
+        gameObject.GetComponent<Rigidbody>().isKinematic = false;
         _health = 200f;
         _healthBar.value = _health;
         _secondLife = true;

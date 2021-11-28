@@ -343,7 +343,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Finish in 3 minutes
+  m_Text: Finish in 2 minutes
 --- !u!114 &9407719973289158
 MonoBehaviour:
   m_ObjectHideFlags: 0
