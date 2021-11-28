@@ -10,6 +10,8 @@ public abstract class AMobHealth : AHealthManager
     [SerializeField] protected Slider _healthBar;
     [SerializeField] private int _giveScore = 100;
     [SerializeField] private bool _isBoss = false;
+    [SerializeField] private AudioSource _takeDmgSFX;
+    
     private Score _score;
     private Objective _obj1;
     private Objective _obj2;
@@ -36,8 +38,10 @@ public abstract class AMobHealth : AHealthManager
             _health -= amount;
             if (_health <= 0)
                 Die();
-            else
+            else {
+                AudioSource takeDmgSFX = Instantiate(_takeDmgSFX, this.transform.position, this.transform.rotation);
                 AnimTakingDamage();
+            }
             _healthBar.value = _health;
         }
     }

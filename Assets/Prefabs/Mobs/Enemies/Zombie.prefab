@@ -3095,6 +3095,7 @@ MonoBehaviour:
   _rangeDetect: 8
   _rangeAttack: 2.5
   _damage: 1
+  _atkSFX: {fileID: 6234416468981284165, guid: 493f4f8ff879fc54bb38db7a007fb2af, type: 3}
 --- !u!114 &558204824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3110,3 +3111,6 @@ MonoBehaviour:
   _health: 1
   _animator: {fileID: 6405585755114275854}
   _healthBar: {fileID: 9077403368566918175}
+  _giveScore: 100
+  _isBoss: 0
+  _takeDmgSFX: {fileID: 7732925639985683507, guid: 113d6360b53ced24e811ac8459ebc7b2, type: 3}

@@ -12,6 +12,8 @@ public abstract class AMobManager : MonoBehaviour
     [SerializeField] protected float _rangeDetect = 10f;
     [SerializeField] protected float _rangeAttack = 2.5f;
     [SerializeField] protected int _damage = 10;
+    [SerializeField] private AudioSource _atkSFX;
+    
     protected float _cooldownTimer;
     private GameObject _target;
 
@@ -64,6 +66,7 @@ public abstract class AMobManager : MonoBehaviour
         }
         if (_cooldownTimer >= _cooldown) {
             if (animation.IsName(GetIdleAttackName()) || animation.IsName(GetMoveName())) {
+                AudioSource atkSFX = Instantiate(_atkSFX, this.transform.position, this.transform.rotation);
                 _target.GetComponent<AHealthManager>().TakeDamage(_damage);
                 AnimAttacking();
                 _cooldownTimer -= _cooldown;
