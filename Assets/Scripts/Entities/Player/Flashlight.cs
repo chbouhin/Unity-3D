@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Flashlight : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class Flashlight : MonoBehaviour
     [SerializeField] private float _batteryCapacity = 5f;
     [SerializeField] private float _batteryReloadFactor = 4f;
     [Range(0, 1)] [SerializeField] private float _minIntensity = 0.4f;
+    [SerializeField] private Slider _batterySlider;
     private float _batteryTimer;
     private Flashlight_PRO _flashlightProManager;
     private bool _isActive = false;
@@ -34,6 +36,8 @@ public class Flashlight : MonoBehaviour
             }
         } else if (_batteryTimer <= _batteryCapacity)
             _batteryTimer += Time.deltaTime / _batteryReloadFactor;
+        if (_batterySlider != null)
+            _batterySlider.value = _batteryTimer / _batteryCapacity;
     }
 
     public void AddBattery(float percentToAdd)
