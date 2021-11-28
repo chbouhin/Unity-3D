@@ -12,6 +12,7 @@ public abstract class AGun : MonoBehaviour
     [SerializeField] protected bool _automatic = true;
     [SerializeField] protected Animator _animator;
     [SerializeField] protected LayerMask _layerToIgnore;
+    [SerializeField] private AudioSource _gunReloading;
     protected bool _reloading = false;
     protected int _currentAmmo;
     protected float _nextTimeToFire = 0f;
@@ -31,9 +32,10 @@ public abstract class AGun : MonoBehaviour
     protected virtual void Update()
     {
         if (_reloading) {
-        } else if (_currentAmmo <= 0 || Input.GetKeyDown("r"))
+        } else if (_currentAmmo <= 0 || Input.GetKeyDown("r")) {
+            AudioSource gunReloading = Instantiate(_gunReloading, this.transform.position, this.transform.rotation);
             StartCoroutine(Reload());
-        else if (((_automatic && Input.GetButton("Fire1")) || (!_automatic && Input.GetButtonDown("Fire1"))) && Time.time >= _nextTimeToFire) {
+        } else if (((_automatic && Input.GetButton("Fire1")) || (!_automatic && Input.GetButtonDown("Fire1"))) && Time.time >= _nextTimeToFire) {
             _muzzleFlashTimer = Time.time + _muzzleFlashDuration;
             _nextTimeToFire = Time.time + 1f / _firerate;
             Shoot();

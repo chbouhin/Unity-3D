@@ -499,16 +499,18 @@ MonoBehaviour:
   _muzzleFlash: {fileID: 5743570314302413066}
   _muzzleFlashDuration: 0.15
   _maxAmmo: 7
-  _reloadTime: 1.2
+  _reloadTime: 2
   _automatic: 0
   _animator: {fileID: 3980043822201572950}
   _layerToIgnore:
     serializedVersion: 2
     m_Bits: 384
+  _gunReloading: {fileID: 6451219881281724923, guid: ac9ee638488cefd4ba4e415e3c6d22c1, type: 3}
   _damage: 10
   _range: 100
   _playerCam: {fileID: 5743570314710003516}
   _impactEffect: {fileID: 100002, guid: 99c73c92ac40473459640b165473206f, type: 3}
+  _gunShot: {fileID: 2472133783806627484, guid: fd8f87d7d298af249b0050bb40218fbb, type: 3}
 --- !u!1001 &5743570314302381992
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -856,6 +858,8 @@ MonoBehaviour:
   _batteryCapacity: 5
   _batteryReloadFactor: 4
   _minIntensity: 0.4
+  _obj: {fileID: 0}
+  _batterySlider: {fileID: 0}
 --- !u!54 &2007333936
 Rigidbody:
   m_ObjectHideFlags: 0
