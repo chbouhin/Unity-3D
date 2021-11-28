@@ -7,7 +7,7 @@ using System;
 public class Timer : MonoBehaviour
 {
     [SerializeField] private Text _textTimer;
-    private float timer = 0f;
+    [HideInInspector] public float timer = 0f;
 
     private void Start()
     {

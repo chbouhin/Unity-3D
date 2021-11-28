@@ -7523,7 +7523,7 @@ MonoBehaviour:
   _animator: {fileID: 4742840106197045252}
   _healthBar: {fileID: 7263655262192916501}
   _giveScore: 500
-  _score: {fileID: 0}
+  _isBoss: 1
   _ogreMobManager: {fileID: 3030644936642659514}
 --- !u!114 &3030644936642659514
 MonoBehaviour:
