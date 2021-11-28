@@ -1,6 +1,7 @@
 # KEY MAPPING:
 
 | KEY | ACTION |
+| :-: | :-: |
 | Z | Forward |
 | S | Backward |
 | Q | Strafe left |
