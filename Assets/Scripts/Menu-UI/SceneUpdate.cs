@@ -19,6 +19,8 @@ public class SceneUpdate : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().buildIndex < 2)
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        else
+            SceneManager.LoadScene("Menu");
     }
 
     public void ReloadScene()
