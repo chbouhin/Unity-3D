@@ -29,6 +29,8 @@ public class GameManagerSingleton : MonoBehaviour
     #region GameOption-variable
     private float _volume = 1f;
     #endregion
+    public bool _checkPoint = false;
+    public Vector3 _savePosition;
 
     private void Awake()
     {

@@ -5,6 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class SceneUpdate : MonoBehaviour
 {
+    private GameManagerSingleton _gameManagerSingleton;
+
+    private void Start()
+    {
+        _gameManagerSingleton = GameObject.Find("GameManager").GetComponent<GameManagerSingleton>();
+    }
+
     public void LoadScene(string scene)
     {
         Time.timeScale = 1;
@@ -18,6 +25,7 @@ public class SceneUpdate : MonoBehaviour
 
     public void NextScene()
     {
+        _gameManagerSingleton._checkPoint = false;
         if (SceneManager.GetActiveScene().buildIndex < 2)
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         else
