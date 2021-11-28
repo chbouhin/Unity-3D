@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HitboxCheckPoint : MonoBehaviour
 {
-    [SerializeField] private GameManagerSingleton _gameManagerSingleton;
+    private GameManagerSingleton _gameManagerSingleton;
 
     private void Start()
     {
