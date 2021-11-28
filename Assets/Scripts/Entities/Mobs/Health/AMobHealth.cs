@@ -51,6 +51,8 @@ public abstract class AMobHealth : AHealthManager
         if (!_isDead) {
             AnimDying();
             Destroy(gameObject, 5f);
+            gameObject.GetComponent<CapsuleCollider>().enabled = false;
+            gameObject.GetComponent<Rigidbody>().isKinematic = true;
             _isDead = true;
             _score.AddScore(_giveScore);
             if (_obj1 != null)
