@@ -28,17 +28,17 @@ public abstract class AGun : MonoBehaviour
         _muzzleFlash.SetActive(false);
     }
 
-    // Update is called once per frame
     protected virtual void Update()
     {
-        if (_reloading) {
-        } else if (_currentAmmo <= 0 || Input.GetKeyDown("r")) {
-            AudioSource gunReloading = Instantiate(_gunReloading, this.transform.position, this.transform.rotation);
-            StartCoroutine(Reload());
-        } else if (((_automatic && Input.GetButton("Fire1")) || (!_automatic && Input.GetButtonDown("Fire1"))) && Time.time >= _nextTimeToFire) {
-            _muzzleFlashTimer = Time.time + _muzzleFlashDuration;
-            _nextTimeToFire = Time.time + 1f / _firerate;
-            Shoot();
+        if (!_reloading) {
+            if ((_currentAmmo <= 0 || Input.GetKeyDown("r")) && Time.timeScale == 1) {
+                AudioSource gunReloading = Instantiate(_gunReloading, this.transform.position, this.transform.rotation);
+                StartCoroutine(Reload());
+            } else if (((_automatic && Input.GetButton("Fire1")) || (!_automatic && Input.GetButtonDown("Fire1"))) && Time.time >= _nextTimeToFire && Time.timeScale == 1) {
+                _muzzleFlashTimer = Time.time + _muzzleFlashDuration;
+                _nextTimeToFire = Time.time + 1f / _firerate;
+                Shoot();
+            }
         }
         if (_muzzleFlash.activeInHierarchy && Time.time >= _muzzleFlashTimer)
             _muzzleFlash.SetActive(false);

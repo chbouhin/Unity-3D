@@ -22,7 +22,7 @@ public class Flashlight : MonoBehaviour
 
     void Update()
     {
-        if (_batteryTimer != 0f && Input.GetKeyDown("f")) {
+        if (_batteryTimer != 0f && Input.GetKeyDown("f") && Time.timeScale == 1) {
             if (_obj != null)
                 _obj.FailedObj();
             _flashlightProManager.Switch();
