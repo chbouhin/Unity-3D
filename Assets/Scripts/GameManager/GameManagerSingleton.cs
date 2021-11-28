@@ -37,7 +37,6 @@ public class GameManagerSingleton : MonoBehaviour
         else {
             _instance = this;
             DontDestroyOnLoad(gameObject);
-            SetVolume(0.05f);
             LoadAllMusic();
             _audioPlayer = gameObject.GetComponent<AudioSource>();
             _saveFilePath = Application.persistentDataPath + "/leaderboard.save";
