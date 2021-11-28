@@ -15,5 +15,5 @@
 
 # BASIC RULE:
 
- - You can only hit your enemy when they are lighten up but your flashlight only have a limited battery time.
+ - You can only hit your enemy when they are lightened up but your flashlight only has a limited battery time.
  - You can recover battery time when your flashlight is off.
