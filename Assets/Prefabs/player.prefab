@@ -148,12 +148,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ae8d4781ae12cb479569fc00b899eb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 12
+  _speed: 5
   _gravity: -9.81
-  _jumpHeight: 3
+  _jumpHeight: 1.5
   _controller: {fileID: 5743570314521107919}
   _groundCheck: {fileID: 5743570313794551517}
-  _groundDistance: 0.4
+  _groundDistance: 0
   _groundMask:
     serializedVersion: 2
     m_Bits: 64
@@ -249,7 +249,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4063
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -283,6 +283,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mouseSensitivity: 200
   _playerBody: {fileID: 5743570314521107916}
+  _playerCam: {fileID: 5743570314710003516}
+  _layerToIgnore:
+    serializedVersion: 2
+    m_Bits: 384
+  _interactRange: 4
 --- !u!1 &5743570315660489584
 GameObject:
   m_ObjectHideFlags: 0
@@ -851,6 +856,22 @@ MonoBehaviour:
   _batteryCapacity: 5
   _batteryReloadFactor: 4
   _minIntensity: 0.4
+--- !u!54 &2007333936
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8191722225483843270}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!65 &3046708770728810659
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -876,20 +897,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afa0bc08c5d4f6b43b66419b477b1310, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _lightenUpList: []
---- !u!54 &2007333936
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8191722225483843270}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
