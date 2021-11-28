@@ -5,11 +5,12 @@ using UnityEngine;
 public class PlayerUIHealthManager : BasicUIHealthManager
 {
     [SerializeField] protected GameObject _gameOverMenu;
+    bool _isDead = false;
 
-    public override void TakeDamage(float amount)
+    protected override void Die()
     {
-        base.TakeDamage(amount);
-        if (_health <= 0) {
+        if (!_isDead) {
+            _isDead = true;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             Time.timeScale = 0;

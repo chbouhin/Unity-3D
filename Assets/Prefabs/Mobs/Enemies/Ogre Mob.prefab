@@ -7401,6 +7401,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3518696879475677624, guid: 82913d38afd63d94caff91a419376a3e, type: 3}
+      propertyPath: maxSpeed
+      value: 1.25
+      objectReference: {fileID: 0}
     - target: {fileID: 5791757573644935107, guid: 82913d38afd63d94caff91a419376a3e, type: 3}
       propertyPath: m_Name
       value: Ogre Mob
@@ -7519,7 +7523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73c63ad6fe2c35f46ae2ba32ec65977b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 200
+  _health: 250
   _animator: {fileID: 4742840106197045252}
   _healthBar: {fileID: 7263655262192916501}
   _giveScore: 500
@@ -7542,7 +7546,7 @@ MonoBehaviour:
   _AIDestinationSetter: {fileID: 5443225652456316832}
   _animator: {fileID: 4742840106197045252}
   _cooldown: 3
-  _rangeDetect: 10
+  _rangeDetect: 15
   _rangeAttack: 2.5
-  _damage: 10
+  _damage: 9
   _atkSFX: {fileID: 6234416468981284165, guid: 493f4f8ff879fc54bb38db7a007fb2af, type: 3}

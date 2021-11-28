@@ -2970,6 +2970,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3518696879475677624, guid: 82913d38afd63d94caff91a419376a3e, type: 3}
+      propertyPath: maxSpeed
+      value: 1.25
+      objectReference: {fileID: 0}
     - target: {fileID: 5791757573644935107, guid: 82913d38afd63d94caff91a419376a3e, type: 3}
       propertyPath: m_Name
       value: Zombie

@@ -764,8 +764,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 757965488112295328}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: -0.00000016292068}
-  m_LocalPosition: {x: -1.2690953, y: 0.015, z: -3.9280033}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 757965488112722442}
@@ -3134,7 +3134,7 @@ MonoBehaviour:
   _cooldown: 1.25
   _rangeDetect: 10
   _rangeAttack: 2.5
-  _damage: 5
+  _damage: 8
   _atkSFX: {fileID: 6234416468981284165, guid: 493f4f8ff879fc54bb38db7a007fb2af, type: 3}
 --- !u!114 &6494463384957664952
 MonoBehaviour:

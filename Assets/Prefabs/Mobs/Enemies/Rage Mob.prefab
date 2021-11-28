@@ -1528,9 +1528,9 @@ MonoBehaviour:
   _AIDestinationSetter: {fileID: 6196789788217358398}
   _animator: {fileID: 6891809717125691290}
   _cooldown: 3
-  _rangeDetect: 10
+  _rangeDetect: 17
   _rangeAttack: 2.5
-  _damage: 10
+  _damage: 7
   _atkSFX: {fileID: 6234416468981284165, guid: 493f4f8ff879fc54bb38db7a007fb2af, type: 3}
 --- !u!114 &8988244329482780361
 MonoBehaviour:

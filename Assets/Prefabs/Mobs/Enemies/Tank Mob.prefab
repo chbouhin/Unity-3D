@@ -3296,7 +3296,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3518696879475677624, guid: 82913d38afd63d94caff91a419376a3e, type: 3}
       propertyPath: maxSpeed
-      value: 1
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 5791757573644935107, guid: 82913d38afd63d94caff91a419376a3e, type: 3}
       propertyPath: m_Name
@@ -3420,7 +3420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c23fbcfa365c16f4da4f82f741cee5d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 200
+  _health: 120
   _animator: {fileID: 4177713074975465306}
   _healthBar: {fileID: 2082470502199514955}
   _giveScore: 100
@@ -3443,7 +3443,7 @@ MonoBehaviour:
   _AIDestinationSetter: {fileID: 3720532937817510142}
   _animator: {fileID: 4177713074975465306}
   _cooldown: 2
-  _rangeDetect: 5
+  _rangeDetect: 12
   _rangeAttack: 2
   _damage: 5
   _atkSFX: {fileID: 6234416468981284165, guid: 493f4f8ff879fc54bb38db7a007fb2af, type: 3}

@@ -2801,7 +2801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c23fbcfa365c16f4da4f82f741cee5d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 100
+  _health: 60
   _animator: {fileID: 1346363619248049006}
   _healthBar: {fileID: 4013660129474118527}
   _giveScore: 100
@@ -2824,7 +2824,7 @@ MonoBehaviour:
   _AIDestinationSetter: {fileID: 1798332092428321994}
   _animator: {fileID: 1346363619248049006}
   _cooldown: 3
-  _rangeDetect: 10
+  _rangeDetect: 15
   _rangeAttack: 2.5
-  _damage: 10
+  _damage: 8
   _atkSFX: {fileID: 6234416468981284165, guid: 493f4f8ff879fc54bb38db7a007fb2af, type: 3}
