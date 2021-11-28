@@ -153,7 +153,7 @@ MonoBehaviour:
   _jumpHeight: 1.5
   _controller: {fileID: 5743570314521107919}
   _groundCheck: {fileID: 5743570313794551517}
-  _groundDistance: 0.4
+  _groundDistance: 0
   _groundMask:
     serializedVersion: 2
     m_Bits: 64
@@ -283,6 +283,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mouseSensitivity: 200
   _playerBody: {fileID: 5743570314521107916}
+  _playerCam: {fileID: 5743570314710003516}
+  _layerToIgnore:
+    serializedVersion: 2
+    m_Bits: 384
+  _interactRange: 4
 --- !u!1 &5743570315660489584
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InteractWithDoor : MonoBehaviour
 {
-    bool open;
+    public bool open;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +17,7 @@ public class InteractWithDoor : MonoBehaviour
         
     }
 
-    int OpenDoor()
+    public int OpenDoor()
     {
         if(this.open == false) {
             transform.Rotate(0, 90, 0);
@@ -27,7 +27,7 @@ public class InteractWithDoor : MonoBehaviour
         return 1;
     }
 
-    int CloseDoor()
+    public int CloseDoor()
     {
         if(this.open == true) {
             transform.Rotate(0, -90, 0);
