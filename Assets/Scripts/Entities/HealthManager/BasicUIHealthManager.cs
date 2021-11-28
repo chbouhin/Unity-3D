@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class BasicUIHealthManager : AHealthManager
 {
-    [SerializeField] private float _health = 100f;
+    [SerializeField] protected float _health = 100f;
     [SerializeField] protected Slider _healthBar;
 
     private void Start()
