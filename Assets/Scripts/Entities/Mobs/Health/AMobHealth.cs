@@ -9,7 +9,10 @@ public abstract class AMobHealth : AHealthManager
     [SerializeField] protected Animator _animator;
     [SerializeField] protected Slider _healthBar;
     [SerializeField] private int _giveScore = 100;
+    [SerializeField] private bool _isBoss = false;
     private Score _score;
+    private Objective _obj1;
+    private Objective _obj2;
     protected bool _isDead = false;
 
     private void Start()
@@ -17,6 +20,14 @@ public abstract class AMobHealth : AHealthManager
         _healthBar.maxValue = _health;
         _healthBar.value = _health;
         _score = GameObject.Find("GameSceneManager").GetComponent<Score>();
+        GameObject obj11 = GameObject.Find("Obj11");
+        if (obj11 != null)
+            _obj1 = obj11.GetComponent<Objective>();
+        if (_isBoss) {
+            GameObject obj12 = GameObject.Find("Obj12");
+            if (obj12 != null)
+                _obj2 = obj12.GetComponent<Objective>();
+        }
     }
 
     public override void TakeDamage(float amount)
@@ -38,6 +49,10 @@ public abstract class AMobHealth : AHealthManager
             Destroy(gameObject, 5f);
             _isDead = true;
             _score.AddScore(_giveScore);
+            if (_obj1 != null)
+                _obj1.UpdateObj(1);
+            if (_obj2 != null)
+                _obj2.UpdateObj(1);
         }
     }
 

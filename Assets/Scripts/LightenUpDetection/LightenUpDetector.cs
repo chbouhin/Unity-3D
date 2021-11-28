@@ -19,6 +19,8 @@ public class LightenUpDetector : MonoBehaviour
 
     public void Remove(GameObject LightenUpItem)
     {
+        if (LightenUpItem == null)
+            return;
         if (_layerToDetect == (_layerToDetect | 1 << LightenUpItem.layer))
             if (_objectList.ContainsKey(LightenUpItem)) {
                 _objectList[LightenUpItem]--;
