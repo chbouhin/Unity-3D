@@ -25,6 +25,8 @@ public class Objective : MonoBehaviour
 
     public void FailedObj()
     {
+        if (_isFinish)
+            return;
         _text.text = _message;
         _text.color = Color.red;
         _isFinish = true;
@@ -32,6 +34,8 @@ public class Objective : MonoBehaviour
 
     public void FinishObj()
     {
+        if (_isFinish)
+            return;
         _text.text = _message;
         _text.color = Color.green;
         _isFinish = true;

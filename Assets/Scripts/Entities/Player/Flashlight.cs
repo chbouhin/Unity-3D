@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Flashlight : MonoBehaviour
 {
-    //public GameObject _light;
     [SerializeField] private float _batteryCapacity = 5f;
     [SerializeField] private float _batteryReloadFactor = 4f;
     [Range(0, 1)] [SerializeField] private float _minIntensity = 0.4f;
+    [SerializeField] private Objective _obj;
     private float _batteryTimer;
     private Flashlight_PRO _flashlightProManager;
     private bool _isActive = false;
@@ -18,10 +18,11 @@ public class Flashlight : MonoBehaviour
         _flashlightProManager = gameObject.GetComponent<Flashlight_PRO>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (_batteryTimer != 0f && Input.GetKeyDown("f")) {
+            if (_obj != null)
+                _obj.FailedObj();
             _flashlightProManager.Switch();
             _isActive = !_isActive;
         }
