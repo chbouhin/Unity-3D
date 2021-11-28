@@ -14,13 +14,14 @@ public class InteractWithDoor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        OpenDoor()
+        
     }
 
     int OpenDoor()
     {
-        if(open == false) {
+        if(this.open == false) {
             transform.Rotate(0, 90, 0);
+            this.open = true;
             return 0;
         }
         return 1;
@@ -28,8 +29,9 @@ public class InteractWithDoor : MonoBehaviour
 
     int CloseDoor()
     {
-        if(open == true) {
+        if(this.open == true) {
             transform.Rotate(0, -90, 0);
+            this.open = false;
             return 0;
         }
         return 1;
