@@ -362,8 +362,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.4745098, g: 1, b: 0.90588236, a: 1}
-    m_PressedColor: {r: 0.22352941, g: 0.8509804, b: 0.85882354, a: 1}
+    m_HighlightedColor: {r: 0.94509804, g: 0.43529412, b: 0.15686275, a: 1}
+    m_PressedColor: {r: 0.85882354, g: 0.22352941, b: 0.22745098, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -508,8 +508,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 1, g: 0.7607843, b: 0.8509804, a: 1}
-    m_PressedColor: {r: 1, g: 0.42745098, b: 0.74509805, a: 1}
+    m_HighlightedColor: {r: 0.94509804, g: 0.43529412, b: 0.15686275, a: 1}
+    m_PressedColor: {r: 0.85882354, g: 0.22352941, b: 0.22745098, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -530,7 +530,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6017390679973732517}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -685,7 +685,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6017390679973732516}
-  - component: {fileID: 6017390679973732517}
   m_Layer: 5
   m_Name: MainMenuButtons
   m_TagString: Untagged
@@ -716,18 +715,6 @@ RectTransform:
   m_AnchoredPosition: {x: 160, y: 20}
   m_SizeDelta: {x: 405, y: 346.87}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &6017390679973732517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6017390679973732519}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 059930bb3aa27e84599cfca88e91d4ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6017390679991239606
 GameObject:
   m_ObjectHideFlags: 0
@@ -984,7 +971,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6017390679973732517}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: PlayGame
         m_Mode: 1
