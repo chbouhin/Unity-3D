@@ -213,6 +213,11 @@ public class GameManagerSingleton : MonoBehaviour
         _volume = volume;
         AudioListener.volume = _volume;
     }
+
+    public float GetVolume()
+    {
+        return _volume;
+    }
     #endregion
 }
 
