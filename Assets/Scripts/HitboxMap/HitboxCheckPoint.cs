@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class HitboxCheckPoint : MonoBehaviour
 {
+    [SerializeField] private List<ParticleSystem> _explosions;
+    [SerializeField] private Transform _explosionPos;
     private GameManagerSingleton _gameManagerSingleton;
 
     private void Start()
@@ -15,5 +17,6 @@ public class HitboxCheckPoint : MonoBehaviour
     {
         _gameManagerSingleton._checkPoint = true;
         _gameManagerSingleton._savePosition = transform.position;
+        Instantiate(_explosions[Random.Range(0, _explosions.Count)], _explosionPos.position, Quaternion.identity);
     }
 }

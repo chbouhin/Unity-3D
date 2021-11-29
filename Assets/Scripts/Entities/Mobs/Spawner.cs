@@ -7,7 +7,7 @@ public class Spawner : MonoBehaviour
     [SerializeField] private List<GameObject> _mobs;
     [SerializeField] private Transform _spawnPos;
     private float _timer = 0f;
-    private float _timerBeforeSpawn = 15f;
+    [SerializeField] private float _timerBeforeSpawn = 15f;
 
     private void Update()
     {

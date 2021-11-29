@@ -299,7 +299,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Get 1000 Scores (0 / 1000)
+  m_Text: Get 2000 Scores (0/2000)
 --- !u!114 &5958340990126197572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,8 +328,8 @@ MonoBehaviour:
   - {fileID: 198405478074982118, guid: 4adffb0018aeda44e9263f901167af1f, type: 3}
   - {fileID: 19800018, guid: a40b64bf23366dc42a892af2c6ff6140, type: 3}
   _text: {fileID: 5503969966500041435}
-  _message: Get 1000 Scores
-  _end: 100
+  _message: Get 2000 Scores
+  _end: 2000
 --- !u!1 &4142074260133467228
 GameObject:
   m_ObjectHideFlags: 0
