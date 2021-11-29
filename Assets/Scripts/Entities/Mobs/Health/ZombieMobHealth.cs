@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ZombieMobHealth : AMobHealth
 {
-    private int nbLife = 5;
+    private int nbLife = 3;
 
     protected override void Die()
     {

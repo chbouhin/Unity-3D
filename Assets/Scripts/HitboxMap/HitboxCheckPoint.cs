@@ -15,8 +15,10 @@ public class HitboxCheckPoint : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        _gameManagerSingleton._checkPoint = true;
-        _gameManagerSingleton._savePosition = transform.position;
-        Instantiate(_explosions[Random.Range(0, _explosions.Count)], _explosionPos.position, Quaternion.identity);
+        if (!_gameManagerSingleton._checkPoint) {
+            _gameManagerSingleton._checkPoint = true;
+            _gameManagerSingleton._savePosition = transform.position;
+            Instantiate(_explosions[Random.Range(0, _explosions.Count)], _explosionPos.position, Quaternion.identity);
+        }
     }
 }
