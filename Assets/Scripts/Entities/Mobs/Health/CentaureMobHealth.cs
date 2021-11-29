@@ -28,7 +28,7 @@ public class CentaureMobHealth : AMobHealth
         yield return new WaitForSeconds(secs);
         gameObject.GetComponent<CapsuleCollider>().enabled = true;
         gameObject.GetComponent<Rigidbody>().isKinematic = false;
-        _health = 200f;
+        _health = 120;
         _healthBar.value = _health;
         _secondLife = true;
     }

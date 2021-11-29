@@ -7523,7 +7523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73c63ad6fe2c35f46ae2ba32ec65977b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 250
+  _health: 160
   _animator: {fileID: 4742840106197045252}
   _healthBar: {fileID: 7263655262192916501}
   _giveScore: 500
