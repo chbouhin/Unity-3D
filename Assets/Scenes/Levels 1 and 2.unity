@@ -1610,6 +1610,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 265961796868515046, guid: 42d6dfa376b0f6541be79127fb10113f, type: 3}
+      propertyPath: _obj
+      value: 
+      objectReference: {fileID: 55349170}
+    - target: {fileID: 265961796868515046, guid: 42d6dfa376b0f6541be79127fb10113f, type: 3}
       propertyPath: _textTimer
       value: 
       objectReference: {fileID: 2057791330}
@@ -2713,6 +2717,10 @@ PrefabInstance:
     - target: {fileID: 7770430055503959091, guid: 25512bfe8d02c674ca766e4b2e6513f5, type: 3}
       propertyPath: m_Name
       value: CheckPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 7770430055503959091, guid: 25512bfe8d02c674ca766e4b2e6513f5, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25512bfe8d02c674ca766e4b2e6513f5, type: 3}

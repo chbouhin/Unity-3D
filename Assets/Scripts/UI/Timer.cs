@@ -6,6 +6,7 @@ using System;
 
 public class Timer : MonoBehaviour
 {
+    [SerializeField] private Objective _obj;
     [SerializeField] private Text _textTimer;
     [HideInInspector] public float timer = 0f;
 
@@ -18,6 +19,8 @@ public class Timer : MonoBehaviour
     {
         timer += Time.deltaTime;
         _textTimer.text = "Timer : " + FormatTime(timer);
+        if (timer > 120f && _obj != null)
+            _obj.FailedObj();
     }
 
     private string FormatTime(float time)

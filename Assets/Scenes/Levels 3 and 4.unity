@@ -2684,6 +2684,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CheckPoint
       objectReference: {fileID: 0}
+    - target: {fileID: 7770430055503959091, guid: 25512bfe8d02c674ca766e4b2e6513f5, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25512bfe8d02c674ca766e4b2e6513f5, type: 3}
 --- !u!4 &2017717074 stripped
