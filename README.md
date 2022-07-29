@@ -20,7 +20,7 @@
 
 # Development:
 
-It was a school project for which I was able to be the project manager of a group of 3 other students who were starting on Unity.
+It was a school project for which I was able to be the project manager of a group of 3 other students (2 of them started on Unity).
 
 I had to manage from A to Z all the tasks of a project manager (organization, distribution of tasks, time management, ...).
 
