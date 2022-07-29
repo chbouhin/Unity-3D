@@ -4,8 +4,8 @@
 | :-: | :-: |
 | Z | Forward |
 | S | Backward |
-| Q | Strafe left |
-| D | Strafe right|
+| Q | Move left |
+| D | Move right|
 | Mouse left | Fire |
 | Space | Jump |
 | F | Toggle flashlight |
